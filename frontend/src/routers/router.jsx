@@ -1,5 +1,6 @@
 import {createBrowserRouter,} from "react-router-dom";
 import App from "../App";
+import HelpRequest from "../pages/HelpRequest";
 
 const router = createBrowserRouter([
     {
@@ -17,7 +18,11 @@ const router = createBrowserRouter([
         {
             path: "/about",
             element:<div>about</div>,
-        }
+        },
+        {
+          path: "/help",
+          element:<HelpRequest/>,
+      }
       ]
     },
   ]);
